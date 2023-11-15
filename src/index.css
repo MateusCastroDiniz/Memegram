@@ -5,9 +5,155 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;;
+}
+
+.App{
+  width: 100%;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  border: 1px solid red;
+}
+
+.avatar {
+  width:75px;
+  height:75px;
+  border-radius: 50%;
+}
+
+div.user-avatar, .user-avatar {
+  z-index: 2;
+  width: 130px !important;
+}
+
+.user-name{
+  color: black;
+}
+
+.card-header{
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.lista-usu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.lista-usu li {
+  width: fit-content;
+}
+
+.lista-usu h1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 10px !important;
+  margin: 0;
+}
+
+
+
+.wave {
+  position: absolute;
+  left: -100px;
+  right: -100px;
+  top: -10px;
+  z-index: -1;
+}
+
+.waves-container {
+  position: fixed;
+  width: 100vw;
+  height: 20%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.wave1 {
+  animation: wave1 2s ease-in-out infinite alternate;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.wave2 {
+  animation: wave2 2.5s ease-in-out infinite alternate;
+  z-index: 0;
+  top: 0;
+  left: 0;
+
+}
+
+.controls {
+  cursor: pointer;
+}
+
+.controls button{
+    opacity: 0.5;
+    background: none;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    transition: opacity .2s;
+}
+
+.controls button:hover{
+  opacity: 1;
+}
+
+.timeline{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: none;
+}
+
+.timeline .bar{
+  background-color: gray;
+  height: 5px;
+  flex: 1;
+}
+
+.timeline.bar:nth-child(1){
+  background-color: red;
+  width: 0;
+  height: 5px;
+}
+
+@keyframes wave1 {
+  0% {
+    transform: translateX(0) scaleY(-1);
+
+  }
+
+  100% {
+    transform: translateX(-40px) scaleY(-1);
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    transform: translateX(0) scaleY(-1);
+
+  }
+
+  100% {
+    transform: translateX(-10px) scaleY(-1);
+
+  }
 }
