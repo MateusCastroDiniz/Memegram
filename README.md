@@ -24,12 +24,12 @@ In the project directory, you can run:
     ├── App.js
     ├── App.test.js
     ├── components
-    │   └── icons.js
+    │   ├── icons.js
+    │   ├── publiList.js
+    │   ├── usersList.js
+    │   └── videoStatus.js
     ├── index.css
     ├── index.js
-    ├── publiList.js
     ├── reportWebVitals.js
-    ├── setupTests.js
-    ├── usersList.js
-    └── videoStatus.js
+    └── setupTests.js
 ~~~
