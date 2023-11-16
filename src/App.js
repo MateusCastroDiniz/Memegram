@@ -5,8 +5,8 @@ import '../node_modules/bootstrap/dist/js/bootstrap.js';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
-import { users } from './usersList.js';
-import { publis } from './publiList.js';
+import { users } from './components/usersList.js';
+import { publis } from './components/publiList.js';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 import Icons from './components/icons.js'
 
